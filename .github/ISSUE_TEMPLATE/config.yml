@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Install help and the full guide
+    url: https://learnmagic.ai/skills
+    about: Step-by-step install instructions and examples for each skill
