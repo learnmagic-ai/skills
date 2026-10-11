@@ -27,6 +27,21 @@ Each skill here is just a folder with a plain text file called `SKILL.md` inside
 
 Every skill is written to work in a normal Claude chat. If a step works better with extra tools (like web access or files on your computer), the skill says so and gives you a way to do it without them.
 
+## Try one first
+
+Each of these prompts was used to test the skill in a fresh Claude Code install. Paste one in after installing, then swap in your own plan, page or claim.
+
+| Skill | A first thing to say |
+|---|---|
+| **premortem** | `Use the premortem skill on this plan: I will run a free two-hour Saturday workshop at my local library teaching 12 retirees to use AI to write letters.` |
+| **stress-test** | `Use the stress-test skill on this plan: build a one-page website for my dog-walking business this weekend with AI, put my prices and a booking form on it, and share the link on Monday.` |
+| **intake** | `Use the intake skill. My idea: a simple page where parents in my kid's class can sign up to bring snacks for the school trip.` |
+| **canopy** | `Use the canopy skill on this plan: my small bakery takes about 40 orders a week by phone. Next month I switch to an order form page that emails me each order.` |
+| **qc** | `Use the qc skill to check this page I asked for ("a page with my name in big blue letters, centered"):` followed by the page's code. |
+| **listen** | `Use the listen skill on this feedback:` followed by your list of changes, all in one message. |
+| **research-methodology** | `Use the research-methodology skill. Claim to check: "Honey never spoils." How sure can we be, and what kind of source would settle it?` |
+| **websiteseogeo** | `Use the websiteseogeo skill on this page:` followed by your page's code (or its address, if your AI can browse the web). |
+
 ## How to install
 
 No terminal needed for the first two options. The easiest route is the ready-made ZIP for each skill, which already has the right folder layout. Download it from [learnmagic.ai/skills](https://learnmagic.ai/skills) (each skill has a download button), or use a direct link such as `https://learnmagic.ai/skills/qc.zip` (swap `qc` for any skill name in the table above).
