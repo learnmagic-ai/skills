@@ -29,23 +29,30 @@ Every skill is written to work in a normal Claude chat. If a step works better w
 
 ## How to install
 
+No terminal needed for the first two options. The easiest route is the ready-made ZIP for each skill, which already has the right folder layout. Download it from [learnmagic.ai/skills](https://learnmagic.ai/skills) (each skill has a download button), or use a direct link such as `https://learnmagic.ai/skills/qc.zip` (swap `qc` for any skill name in the table above).
+
 ### In Claude (claude.ai or the desktop app)
 
-1. Download the skill's folder and turn it into a ZIP file. The ZIP should contain the skill's folder itself (for example the `qc` folder, with `SKILL.md` inside it).
-2. In Claude, go to **Customize > Skills**, click **+**, then **+ Create skill**, then **Upload a skill**, and upload the ZIP.
-3. If you're on the Free, Pro or Max plan, code execution needs to be switched on in **Settings > Capabilities** for skills to work.
+1. Download the skill's ZIP and keep it zipped. It already holds the skill's folder (for example `qc`) with `SKILL.md` inside.
+2. In Claude, go to **Customize > Skills**, click **+**, then **Create skill**, then **Upload a skill**, and choose the ZIP.
+3. On the Free, Pro or Max plan, code execution has to be switched on in **Settings > Capabilities** for skills to work.
+4. Start a new chat and describe the job. Claude uses the skill when it fits, or you can ask for it by name ("use the qc skill").
+
+Working from a copy of this repo instead? Make a ZIP of the skill's folder yourself. The ZIP must contain the folder (for example `qc/`), not just the files inside it.
 
 Source: Claude's help page, [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude). Menus change from time to time, so if these steps don't match what you see, check that page.
 
 ### In Claude Code
 
-Copy the skill's folder into your personal skills folder, so you end up with, for example:
+1. Download the ZIP and unzip it (or copy the skill's folder from this repo). You get a folder named after the skill, for example `qc`.
+2. Move that folder into the `.claude/skills` folder in your home folder, so you end up with, for example:
 
-```
-~/.claude/skills/qc/SKILL.md
-```
+   ```
+   ~/.claude/skills/qc/SKILL.md
+   ```
 
-(`~` means your home folder.) The skill is then available in all your projects. You can use it by typing `/qc`, or Claude will use it when it fits.
+   `~` means your home folder. Make the `skills` folder if it isn't there yet.
+3. In Claude Code, type `/qc` to use it, or just describe the job and Claude will pick it when it fits. If it doesn't show up, start a new session.
 
 Source: [Extend Claude with skills](https://code.claude.com/docs/en/skills) in the Claude Code docs.
 
